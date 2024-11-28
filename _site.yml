@@ -37,6 +37,7 @@ output:
     theme: cosmo
     highlight: textmate
     includes:
+      in_header: [favicon.html]
     css:
       - ./CSS/responsive.css
       - ./CSS/narrow-margins.css
