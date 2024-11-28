@@ -1,0 +1,46 @@
+---
+title: Plataforma de Avaliação
+date: '`r format(Sys.Date())`'
+author:
+  - name: IDOR
+creative_commons: CC BY-NC
+output_dir: docs
+excludes:
+search: true
+navbar:
+  left:
+    - text: ""
+      icon: "fa-home"
+      href: [index.html]
+    - text: "Autoavaliação NAPED"
+      icon: "fa-list-check"
+      href: [naped.html]
+    - text: "Avaliação CPA"
+      icon: "fa-list-check"
+      href: [cpa.html]
+  right:
+    - text: "Site"
+      icon: "fa-globe"
+      href: [https://www.rededorsaoluiz.com.br/instituto/idor/]
+    - text: "Instagram"
+      icon: "fa-instagram"
+      href: [https://www.instagram.com/idor_oficial]
+    - text: "Facebook"
+      icon: "fa-facebook"
+      href: [https://pt-br.facebook.com/DOrInstitute]
+    - text: ""
+      icon: "fa-github"
+      href: [https://github.com/FerreiraAS/IDOR-autoavaliacao]
+
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    includes:
+    css:
+      - ./CSS/responsive.css
+      - ./CSS/narrow-margins.css
+    toc: true
+    toc_float: false
+    edit: null
+---

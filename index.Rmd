@@ -1,0 +1,48 @@
+---
+title: Plataforma de Avaliação
+---
+
+```{r, echo = FALSE, fig.align='right'}
+knitr::include_graphics("logo.png")
+```
+
+<br>
+
+<br>
+
+```{r accordeon, echo = FALSE}
+bsplus::bs_accordion(id = "forms") |>
+  bsplus::bs_set_opts(panel_type = "default", use_heading_link = TRUE) |>
+  bsplus::bs_append(
+    title =  htmltools::HTML("<span style='font-size: 30px; display: block; text-align: center; padding: 10px 30px 10px 30px;'>
+                             <i class=\"fa-solid fa-list-check\"></i>
+                             Autoavaliação NAPED
+                             </span>"),
+    content = htmltools::HTML(
+      "<div style='font-size: 20px;'>
+          Caro(a) Docente,
+          <br><br>
+          A etapa de  AUTOAVALIAÇÃO DOCENTE é muito importante e valiosa, na qual você deverá revisitar as práticas realizadas no período letivo de forma reflexiva, além de planejar os desafios e metas para o próximo semestre. Planejar, aplicar, avaliar, refletir e planejar de novo é sempre um processo que incentiva o aprimoramento constante.
+          <br><br>
+          A AUTOAVALIAÇÃO DOCENTE é essencial e configura uma oportunidade de refletir sobre suas entregas durante o semestre letivo e guia a terceira Etapa (Feedback com o coordenador)
+          <br><br>
+          Participe agora! <a href='naped.html'>NAPED</a>
+      </div>"
+      ), show = FALSE
+    )|>
+  bsplus::bs_append(
+    title =  htmltools::HTML("<span style='font-size: 30px; display: block; text-align: center; padding: 10px 30px 10px 30px;'>
+                             <i class=\"fa-solid fa-list-check\"></i>
+                             Avaliação CPA
+                             </span>"),
+    content = htmltools::HTML(
+      "<div style='font-size: 20px;'>
+          Caros Docentes, a Comissão Própria de Avaliação (CPA) contribui para o aperfeiçoamento do IDOR.
+          <br><br>
+          Por isso, é muito importante que todos respondam à pesquisa e façam parte da construção de uma faculdade cada vez melhor.
+          <br><br>
+          Participe agora! <a href='cpa.html'>CPA</a>
+      </div>"
+      ), show = FALSE
+  )
+```
